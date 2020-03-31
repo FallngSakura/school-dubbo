@@ -1,0 +1,4 @@
+# Project exclude paths
+/school-consumer/target/
+/school-interface/target/
+/school-provider/target/

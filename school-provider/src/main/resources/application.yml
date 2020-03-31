@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+dubbo:
+  ##暴露的服务名称
+  application:
+    name: school-provider
+  ##配置注册中心
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+    check: false
+  ##配置通信协议
+  protocol:
+    name: dubbo
+    port: -1  #随机端口

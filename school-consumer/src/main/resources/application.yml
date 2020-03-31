@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+dubbo:
+  ##暴露的服务名称
+  application:
+    name: school-consumer
+  ##配置注册中心
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+    check: false
+  ##配置通信协议
+  protocol:
+    name: dubbo
+    port: -1  #随机端口
+
+  ##配置消费者启动是否检查
+  consumer:
+    check: false
